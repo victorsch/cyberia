@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="align-text-top text-center">Account Info</h1>
+{% if user.is_authenticated %}
+    <div class="">
+        <div class="row">
+            <div class="col">
+                <h4>Details</h4>
+                <p>Username: {{ user }}</p>
+                <p>Name: </p>
+                <p><a href="/accounts/logout">Logout</a></p>
+            </div>
+            <div class="col">
+                <h4 class="text-center">Interests</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+
+{% else %}
+
+<div class="container text-center">
+    <h4>Please <a href="/accounts/login">login</a> to view this page.</h4>
+    <h4><a href="/register">Register</a></h4>
+</div>
+
+{% endif %}
+
+
+
+{% endblock %}
