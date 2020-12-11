@@ -26,7 +26,9 @@ SECRET_KEY = '1u6j=qem(wf8kapg)yrsn^27asp-_65l9#bovnbd$ulh435f8d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'cyberianews.herokuapp.com'
+]
 
 
 # Application definition
