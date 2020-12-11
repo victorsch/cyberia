@@ -125,6 +125,9 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
+# Force users to use SSL
+SECURE_SSL_REDIRECT = True
+
 
 # Redirects user after they login
 LOGIN_REDIRECT_URL = '/'
